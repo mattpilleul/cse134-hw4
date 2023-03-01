@@ -137,9 +137,7 @@
               "Do you want to work with me ?",
               "Yes ! I'm looking to build an e-commerce website"
             );
-            console.log(will);
             let clean = DOMPurify.sanitize(will);
-            console.log(clean);
             if (will == "") {
               alert(
                 "User did not enter anything.\nI'm not sure about your answer, can you tell me again !"
@@ -148,7 +146,7 @@
             } else if (will) {
               document.getElementById(
                 "answerUser"
-              ).innerText = `User message is the following : \n"${will}"`;
+              ).innerText = `User message is the following : \n"${clean}"`;
             } else {
               document.getElementById("answerUser").innerText =
                 "User did not enter anything.\nProbably an error, hope someone will soon want to work with me !";
