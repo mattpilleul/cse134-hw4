@@ -137,7 +137,9 @@
               "Do you want to work with me ?",
               "Yes ! I'm looking to build an e-commerce website"
             );
+            console.log(will);
             let clean = DOMPurify.sanitize(will);
+            console.log(clean);
             if (will == "") {
               alert(
                 "User did not enter anything.\nI'm not sure about your answer, can you tell me again !"
