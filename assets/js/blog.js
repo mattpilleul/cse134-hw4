@@ -25,7 +25,6 @@ function reformatDate(dateStr) {
 
 function addBlogToList(blog) {
   if (!blog.title || !blog.description) {
-    console.error("Invalid blog object:", blog);
     return;
   }
   const listItem = document.createElement("li");
